@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body class="flex justify-center items-start h-screen">
+     <div class="relative calculator w-[200px] text-center bg-slate-600 p-3 rounded-md ">
+        <div class=" w-full h-[6rem] px-2 pt-2 bg-slate-300 mb-2 rounded-lg flex" type="text" id="result"></div>
+        <div class="absolute top-16 px-2 result_sum"></div>
+        <div class="buttons child:p-1 child:rounded-lg grid grid-cols-4 child:bg-slate-100 gap-2 child:flex child:justify-center child:items-center child-hover:text-yellow-50 child-hover:bg-slate-400 child:shadow-2xl child:transition-colors">
+          <button onclick="appendCharacter('7')">7</button>
+          <button onclick="appendCharacter('8')">8</button>
+          <button onclick="appendCharacter('9')">9</button>
+          <button onclick="calc('/')">÷</button>
+          <button onclick="appendCharacter('4')">4</button>
+          <button onclick="appendCharacter('5')">5</button>
+          <button onclick="appendCharacter('6')">6</button>
+          <button onclick="calc('*')">x</button>
+          <button onclick="appendCharacter('1')">1</button>
+          <button onclick="appendCharacter('2')">2</button>
+          <button onclick="appendCharacter('3')">3</button>
+          <button onclick="calc('-')">-</button>
+          <button onclick="clearResult()">C</button>
+          <button onclick="appendCharacter('0')">0</button>
+          <button onclick="calc('+')">+</button>
+          <button onclick="calculateResult()">=</button>
+          <!-- <button onclick="appendCharacter('.')">.</button> -->
+        </div>
+      </div>    
+      <script src="../script.js"></script>
+</body>
+</html>
